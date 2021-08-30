@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite_curso_Automatizacion" class="navigator-link">
+              <span class="suite-name border-failed">Suite curso Automatizacion</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite_curso_Automatizacion" class="navigator-link ">
+                    <span>C:\Users\Daniela.Bascunan\Downloads\javaTutorial\TrabajoPOM_Daniela_Bascunan\src\test\java\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite_curso_Automatizacion" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite_curso_Automatizacion" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite_curso_Automatizacion" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite_curso_Automatizacion" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite_curso_Automatizacion" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite_curso_Automatizacion" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">8 methods, 1 failed,   7 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite_curso_Automatizacion" class="hide-methods failed suite-Suite_curso_Automatizacion"> (hide)</a> <!-- hide-methods failed suite-Suite_curso_Automatizacion -->
+                      <a href="#" panel-name="suite-Suite_curso_Automatizacion" class="show-methods failed suite-Suite_curso_Automatizacion"> (show)</a> <!-- show-methods failed suite-Suite_curso_Automatizacion -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite_curso_Automatizacion">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite_curso_Automatizacion" title="tests.Tests" class="method navigator-link" hash-for-method="CP_02_Validar_Registro_Usuario">CP_02_Validar_Registro_Usuario</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite_curso_Automatizacion -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite_curso_Automatizacion" class="hide-methods passed suite-Suite_curso_Automatizacion"> (hide)</a> <!-- hide-methods passed suite-Suite_curso_Automatizacion -->
+                      <a href="#" panel-name="suite-Suite_curso_Automatizacion" class="show-methods passed suite-Suite_curso_Automatizacion"> (show)</a> <!-- show-methods passed suite-Suite_curso_Automatizacion -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite_curso_Automatizacion">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite_curso_Automatizacion" title="tests.Tests" class="method navigator-link" hash-for-method="CP_01_ValidarIngresoLoginFallido">CP_01_ValidarIngresoLoginFallido</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite_curso_Automatizacion" title="tests.Tests" class="method navigator-link" hash-for-method="CP_03_Validar_Registro_Usuario_Existente">CP_03_Validar_Registro_Usuario_Existente</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite_curso_Automatizacion" title="tests.Tests" class="method navigator-link" hash-for-method="CP_04_Validar_LoginExitoso">CP_04_Validar_LoginExitoso</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite_curso_Automatizacion" title="tests.Tests" class="method navigator-link" hash-for-method="CP_05_Validar_Cierre_Sesion">CP_05_Validar_Cierre_Sesion</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite_curso_Automatizacion" title="tests.Tests" class="method navigator-link" hash-for-method="CP_06_Buscar_Productos">CP_06_Buscar_Productos</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite_curso_Automatizacion" title="tests.Tests" class="method navigator-link" hash-for-method="CP_07_Buscar_Producto_Agregar_a_Carrito">CP_07_Buscar_Producto_Agregar_a_Carrito</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite_curso_Automatizacion" title="tests.Tests" class="method navigator-link" hash-for-method="CP_08_Eliminar_Item_Carrito_Compras">CP_08_Eliminar_Item_Carrito_Compras</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite_curso_Automatizacion -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite_curso_Automatizacion" class="panel Suite_curso_Automatizacion">
+          <div class="suite-Suite_curso_Automatizacion-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.Tests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CP_02_Validar_Registro_Usuario">
+                  </a> <!-- CP_02_Validar_Registro_Usuario -->
+                  <span class="method-name">CP_02_Validar_Registro_Usuario</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.id: name (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at utilidades.ClaseBase.esperaExplicita(ClaseBase.java:144)
+	at pages.FormularioRegistroPage.registroFormulario(FormularioRegistroPage.java:20)
+	at tests.Tests.CP_02_Validar_Registro_Usuario(Tests.java:89)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: #name
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CL-NB-716&apos;, ip: &apos;10.208.164.104&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 89.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210622155641, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 16208, moz:profile: C:\Users\Daniela.Bascunan\A..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d8accc1f-e193-429c-b367-36aa71744284
+*** Element info: {Using=id, value=name}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 28 more
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite_curso_Automatizacion-class-failed -->
+          <div class="suite-Suite_curso_Automatizacion-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.Tests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CP_01_ValidarIngresoLoginFallido">
+                  </a> <!-- CP_01_ValidarIngresoLoginFallido -->
+                  <span class="method-name">CP_01_ValidarIngresoLoginFallido</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CP_03_Validar_Registro_Usuario_Existente">
+                  </a> <!-- CP_03_Validar_Registro_Usuario_Existente -->
+                  <span class="method-name">CP_03_Validar_Registro_Usuario_Existente</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CP_04_Validar_LoginExitoso">
+                  </a> <!-- CP_04_Validar_LoginExitoso -->
+                  <span class="method-name">CP_04_Validar_LoginExitoso</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CP_05_Validar_Cierre_Sesion">
+                  </a> <!-- CP_05_Validar_Cierre_Sesion -->
+                  <span class="method-name">CP_05_Validar_Cierre_Sesion</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CP_06_Buscar_Productos">
+                  </a> <!-- CP_06_Buscar_Productos -->
+                  <span class="method-name">CP_06_Buscar_Productos</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CP_07_Buscar_Producto_Agregar_a_Carrito">
+                  </a> <!-- CP_07_Buscar_Producto_Agregar_a_Carrito -->
+                  <span class="method-name">CP_07_Buscar_Producto_Agregar_a_Carrito</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CP_08_Eliminar_Item_Carrito_Compras">
+                  </a> <!-- CP_08_Eliminar_Item_Carrito_Compras -->
+                  <span class="method-name">CP_08_Eliminar_Item_Carrito_Compras</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite_curso_Automatizacion-class-passed -->
+        </div> <!-- panel Suite_curso_Automatizacion -->
+        <div panel-name="test-xml-Suite_curso_Automatizacion" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Daniela.Bascunan\Downloads\javaTutorial\TrabajoPOM_Daniela_Bascunan\src\test\java\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite curso Automatizacion&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Pruebas Selenium Daniela Bascuñan&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.Tests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Pruebas Selenium Daniela Bascuñan --&gt;
+&lt;/suite&gt; &lt;!-- Suite curso Automatizacion --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite_curso_Automatizacion" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite curso Automatizacion</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Pruebas Selenium Daniela Bascuñan (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite_curso_Automatizacion" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite curso Automatizacion</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite_curso_Automatizacion" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite curso Automatizacion</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite_curso_Automatizacion');
+function tableData_Suite_curso_Automatizacion() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(8);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'CP_02_Validar_Registro_Usuario')
+data.setCell(0, 2, 'tests.Tests')
+data.setCell(0, 3, 34812);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'CP_08_Eliminar_Item_Carrito_Compras')
+data.setCell(1, 2, 'tests.Tests')
+data.setCell(1, 3, 29365);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'CP_07_Buscar_Producto_Agregar_a_Carrito')
+data.setCell(2, 2, 'tests.Tests')
+data.setCell(2, 3, 24228);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'CP_06_Buscar_Productos')
+data.setCell(3, 2, 'tests.Tests')
+data.setCell(3, 3, 17629);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'CP_05_Validar_Cierre_Sesion')
+data.setCell(4, 2, 'tests.Tests')
+data.setCell(4, 3, 13761);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'CP_04_Validar_LoginExitoso')
+data.setCell(5, 2, 'tests.Tests')
+data.setCell(5, 3, 10184);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'CP_01_ValidarIngresoLoginFallido')
+data.setCell(6, 2, 'tests.Tests')
+data.setCell(6, 3, 8158);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'CP_03_Validar_Registro_Usuario_Existente')
+data.setCell(7, 2, 'tests.Tests')
+data.setCell(7, 3, 6951);
+window.suiteTableData['Suite_curso_Automatizacion']= { tableData: data, tableDiv: 'times-div-Suite_curso_Automatizacion'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <div id="times-div-Suite_curso_Automatizacion">
+              </div> <!-- times-div-Suite_curso_Automatizacion -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite_curso_Automatizacion" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite curso Automatizacion</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite_curso_Automatizacion" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite_curso_Automatizacion" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.Tests</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">before</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">prepararSitio</span>
+                <span class="method-start">7973 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">CP_01_ValidarIngresoLoginFallido</span>
+                <span class="method-start">31820 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">prepararSitio</span>
+                <span class="method-start">39981 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">CP_02_Validar_Registro_Usuario</span>
+                <span class="method-start">43542 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">prepararSitio</span>
+                <span class="method-start">78362 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">CP_03_Validar_Registro_Usuario_Existente</span>
+                <span class="method-start">81050 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">prepararSitio</span>
+                <span class="method-start">88003 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">CP_04_Validar_LoginExitoso</span>
+                <span class="method-start">90530 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">prepararSitio</span>
+                <span class="method-start">100716 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">CP_05_Validar_Cierre_Sesion</span>
+                <span class="method-start">103418 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">prepararSitio</span>
+                <span class="method-start">117180 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">CP_06_Buscar_Productos</span>
+                <span class="method-start">119676 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">prepararSitio</span>
+                <span class="method-start">137307 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">CP_07_Buscar_Producto_Agregar_a_Carrito</span>
+                <span class="method-start">139853 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">prepararSitio</span>
+                <span class="method-start">164082 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">CP_08_Eliminar_Item_Carrito_Compras</span>
+                <span class="method-start">167288 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">after</span>
+                <span class="method-start">196656 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
